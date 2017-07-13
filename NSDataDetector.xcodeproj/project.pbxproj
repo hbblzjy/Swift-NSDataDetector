@@ -13,6 +13,7 @@
 		E8415CBD1F1607E700A78661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8415CBB1F1607E700A78661 /* Main.storyboard */; };
 		E8415CBF1F1607E700A78661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8415CBE1F1607E700A78661 /* Assets.xcassets */; };
 		E8415CC21F1607E700A78661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8415CC01F1607E700A78661 /* LaunchScreen.storyboard */; };
+		E8415CCB1F16332500A78661 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8415CCA1F16332500A78661 /* OneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E8415CBE1F1607E700A78661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8415CC11F1607E700A78661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8415CC31F1607E700A78661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8415CC91F16332400A78661 /* NSDataDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDataDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8415CCA1F16332500A78661 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				E8415CC01F1607E700A78661 /* LaunchScreen.storyboard */,
 				E8415CC31F1607E700A78661 /* Info.plist */,
 				E8415CB21F1607E700A78661 /* Supporting Files */,
+				E8415CCA1F16332500A78661 /* OneViewController.swift */,
+				E8415CC91F16332400A78661 /* NSDataDetector-Bridging-Header.h */,
 			);
 			path = NSDataDetector;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					E8415CAE1F1607E700A78661 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +159,7 @@
 				E8415CBA1F1607E700A78661 /* ViewController.m in Sources */,
 				E8415CB71F1607E700A78661 /* AppDelegate.m in Sources */,
 				E8415CB41F1607E700A78661 /* main.m in Sources */,
+				E8415CCB1F16332500A78661 /* OneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +279,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NSDataDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JasonHao.NSDataDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NSDataDetector/NSDataDetector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -283,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NSDataDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JasonHao.NSDataDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NSDataDetector/NSDataDetector-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
